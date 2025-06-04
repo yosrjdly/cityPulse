@@ -1,0 +1,3 @@
+"""
+OpenStreetMap data collection module.
+""" 
