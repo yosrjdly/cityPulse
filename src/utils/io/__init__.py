@@ -2,8 +2,9 @@
 IO utilities for CityPulse.
 
 This package contains utilities for input/output operations, including data versioning,
+
 data catalog, metadata tracking, and file management.
-"""
+
 
 from pathlib import Path
 import sys
@@ -36,3 +37,4 @@ __all__ = [
     'DatasetSchema',
     'get_catalog'
 ] 
+
