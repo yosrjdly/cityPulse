@@ -6,12 +6,12 @@ This document tracks the current status of the CityPulse project, including comp
 
 | Phase | Status | Progress |
 |-------|--------|----------|
-| 1. Core Infrastructure | 🔶 In Progress | ~45% |
+| 1. Core Infrastructure | 🔶 In Progress | ~50% |
 | 2. Data Collection | 🔲 Not Started | 0% |
 | 3. Data Processing | 🔲 Not Started | 0% |
 | 4. Analysis Framework | 🔲 Not Started | 0% |
 | 5. Visualization & Reporting | 🔲 Not Started | 0% |
-| 6. Documentation & Deployment | 🔶 In Progress | ~20% |
+| 6. Documentation & Deployment | 🔶 In Progress | ~25% |
 
 ## Detailed Status by Phase
 
@@ -42,7 +42,7 @@ This document tracks the current status of the CityPulse project, including comp
 | Task | Description | Status | Notes | Documentation Needed | Testing Needed |
 |------|-------------|--------|-------|---------------------|---------------|
 | 1.3.1 | Design data versioning system | ✅ Completed | Implemented comprehensive data versioning system with lineage tracking, version comparison, and metadata management | Data versioning guide | Test version tracking |
-| 1.3.2 | Create data catalog structure | 🔲 Not Started | Basic directories created, no catalog | Data catalog guide | Test catalog integrity |
+| 1.3.2 | Create data catalog structure | ✅ Completed | Implemented comprehensive data catalog system with schema inference, search capabilities, and metadata management | Data catalog guide | Test catalog integrity |
 | 1.3.3 | Implement metadata tracking | 🔲 Not Started | Not implemented | Metadata schema doc | Test metadata validation |
 | 1.3.4 | Set up data validation framework | 🔲 Not Started | Directory created, not implemented | Data validation guide | Test validators |
 | 1.3.5 | Create automated testing infrastructure | 🔲 Not Started | Test directories created, no tests | Testing standards doc | Meta-tests for test framework |
@@ -197,7 +197,7 @@ These sprints (Transit Analysis, Equity Analysis, Forecasting & Simulation) have
 |------|-------------|--------|-------|
 | 6.1.1 | Create architecture documentation | 🔶 In Progress | Basic structure documentation created |
 | 6.1.2 | Develop API documentation | 🔲 Not Started | - |
-| 6.1.3 | Write developer guides | 🔶 In Progress | Git workflow, logging standards, resource monitoring, and data versioning documented |
+| 6.1.3 | Write developer guides | 🔶 In Progress | Git workflow, logging standards, resource monitoring, data versioning, and data catalog documented |
 | 6.1.4 | Create contribution guidelines | 🔲 Not Started | - |
 | 6.1.5 | Implement automated documentation generation | 🔲 Not Started | - |
 
@@ -286,9 +286,9 @@ For effective testing, implement the following for each phase:
 ## Next Steps
 
 1. Continue Sprint 1.3 (Data Infrastructure)
-   - Create data catalog structure (Task 1.3.2)
    - Implement metadata tracking (Task 1.3.3)
    - Set up data validation framework (Task 1.3.4)
+   - Create automated testing infrastructure (Task 1.3.5)
 2. Expand developer documentation
 3. Begin planning for Phase 2 (Data Collection)
 
@@ -296,18 +296,18 @@ For effective testing, implement the following for each phase:
 
 The current focus is on continuing the data infrastructure components:
 
-1. Creating data catalog structure (Task 1.3.2)
-2. Implementing metadata tracking (Task 1.3.3)
+1. Implementing metadata tracking (Task 1.3.3)
+2. Setting up data validation framework (Task 1.3.4)
 3. Continuing developer documentation (Tasks 6.1.1 and 6.1.3)
 
 ## Overall Progress
 
-- Phase 1: ~55% complete
+- Phase 1: ~60% complete
 - Phase 2: Not started
 - Phase 3: Not started
 - Phase 4: Not started
 - Phase 5: Not started
-- Phase 6: ~20% complete
+- Phase 6: ~25% complete
 
 ## Recent Achievements
 
@@ -321,6 +321,7 @@ The current focus is on continuing the data infrastructure components:
 8. Implemented execution time estimation with progress tracking
 9. Created comprehensive resource warning system with user prompts and monitoring
 10. Implemented data versioning system with lineage tracking, version comparison, and metadata management
+11. Implemented data catalog system with schema inference, search capabilities, and metadata management
 
 ## Challenges and Blockers
 
