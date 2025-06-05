@@ -6,6 +6,7 @@ This document tracks the current status of the CityPulse project, including comp
 
 | Phase | Status | Progress |
 |-------|--------|----------|
+
 | 1. Core Infrastructure | 🔶 In Progress | ~60% |
 | 2. Data Collection | 🔲 Not Started | 0% |
 | 3. Data Processing | 🔲 Not Started | 0% |
@@ -45,6 +46,7 @@ This document tracks the current status of the CityPulse project, including comp
 | 1.3.2 | Create data catalog structure | ✅ Completed | Implemented comprehensive data catalog system with schema inference, search capabilities, and metadata management | Data catalog guide | Test catalog integrity |
 | 1.3.3 | Implement metadata tracking | ✅ Completed | Implemented comprehensive metadata tracking system with schema validation, automatic extraction, and categorization | Metadata tracking guide | Test metadata validation |
 | 1.3.4 | Set up data validation framework | 🔲 Not Started | Not implemented | Data validation guide | Test validators |
+
 | 1.3.5 | Create automated testing infrastructure | 🔲 Not Started | Test directories created, no tests | Testing standards doc | Meta-tests for test framework |
 
 ### Phase 2: Data Collection
@@ -296,6 +298,7 @@ For effective testing, implement the following for each phase:
 
 The current focus is on continuing the data infrastructure components:
 
+
 1. Setting up data validation framework (Task 1.3.4)
 2. Creating automated testing infrastructure (Task 1.3.5)
 3. Continuing developer documentation (Tasks 6.1.1 and 6.1.3)
@@ -323,6 +326,7 @@ The current focus is on continuing the data infrastructure components:
 10. Implemented data versioning system with lineage tracking, version comparison, and metadata management
 11. Implemented data catalog system with schema inference, search capabilities, and metadata management
 12. Implemented metadata tracking system with schema validation, automatic extraction, and categorization
+
 
 ## Challenges and Blockers
 
