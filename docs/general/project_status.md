@@ -6,6 +6,7 @@ This document tracks the current status of the CityPulse project, including comp
 
 | Phase | Status | Progress |
 |-------|--------|----------|
+
 | 1. Core Infrastructure | 🔶 In Progress | ~70% |
 | 2. Data Collection | 🔲 Not Started | 0% |
 | 3. Data Processing | 🔲 Not Started | 0% |
@@ -296,8 +297,10 @@ For effective testing, implement the following for each phase:
 
 The current focus is on continuing the data infrastructure components:
 
+
 1. Creating automated testing infrastructure (Task 1.3.5)
 2. Continuing developer documentation (Tasks 6.1.1 and 6.1.3)
+
 
 ## Overall Progress
 
@@ -323,6 +326,7 @@ The current focus is on continuing the data infrastructure components:
 11. Implemented data catalog system with schema inference, search capabilities, and metadata management
 12. Implemented metadata tracking system with schema validation, automatic extraction, and categorization
 13. Implemented data validation framework with rule-based validation, multi-level severity, and detailed reporting
+
 
 ## Challenges and Blockers
 
