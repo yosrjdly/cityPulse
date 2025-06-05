@@ -2,9 +2,8 @@
 IO utilities for CityPulse.
 
 This package contains utilities for input/output operations, including data versioning,
-
 data catalog, metadata tracking, and file management.
-
+"""
 
 from pathlib import Path
 import sys
@@ -27,6 +26,8 @@ from src.utils.io.data_catalog import (
     get_catalog
 )
 
+from src.utils.io.metadata_manager import get_metadata_manager, MetadataEnhancer, MetadataSchema
+
 __all__ = [
     'DataVersioningSystem',
     'DatasetVersion',
@@ -35,6 +36,8 @@ __all__ = [
     'DataCatalog',
     'DatasetEntry',
     'DatasetSchema',
-    'get_catalog'
-] 
-
+    'get_catalog',
+    'get_metadata_manager',
+    'MetadataEnhancer',
+    'MetadataSchema'
+]
