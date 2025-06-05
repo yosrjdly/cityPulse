@@ -7,7 +7,7 @@ This document tracks the current status of the CityPulse project, including comp
 | Phase | Status | Progress |
 |-------|--------|----------|
 | 1. Core Infrastructure | ✅ Completed | 100% |
-| 2. Data Collection | 🔶 In Progress | ~5% |
+| 2. Data Collection | 🔶 In Progress | ~15% |
 | 3. Data Processing | 🔲 Not Started | 0% |
 | 4. Analysis Framework | 🔲 Not Started | 0% |
 | 5. Visualization & Reporting | 🔲 Not Started | 0% |
@@ -55,7 +55,7 @@ This document tracks the current status of the CityPulse project, including comp
 |------|--------|-------|---------------------|---------------|
 | 2.1.1 Modular collector architecture | ✅ Completed | Implemented BaseCollector abstract class with standardized interface, metadata tracking, validation, and error handling | Collector architecture doc | Test base collector |
 | 2.1.2 Collector registry | ✅ Completed | Implemented CollectorRegistry class with registration, discovery, and instantiation capabilities | Collector registry doc | Test registration and discovery |
-| 2.1.3 Rate limiting and retry | 🔲 Not Started | Not implemented | Rate limiting guide | Test backoff strategies |
+| 2.1.3 Rate limiting and retry | ✅ Completed | Implemented token bucket rate limiting, exponential backoff retry, and concurrency management | Rate limiting guide | Test backoff strategies |
 | 2.1.4 Source attribution system | 🔲 Not Started | Not implemented | Attribution standards | Test attribution tracking |
 | 2.1.5 Collection logging | 🔲 Not Started | Not implemented | Collection logging guide | Test log completeness |
 
@@ -304,7 +304,7 @@ The current focus is on continuing the data collection framework:
 ## Overall Progress
 
 - Phase 1: 100% complete
-- Phase 2: ~5% complete
+- Phase 2: ~15% complete
 - Phase 3: Not started
 - Phase 4: Not started
 - Phase 5: Not started
