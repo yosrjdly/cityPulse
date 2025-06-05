@@ -54,7 +54,7 @@ This document tracks the current status of the CityPulse project, including comp
 | Task | Status | Notes | Documentation Needed | Testing Needed |
 |------|--------|-------|---------------------|---------------|
 | 2.1.1 Modular collector architecture | ✅ Completed | Implemented BaseCollector abstract class with standardized interface, metadata tracking, validation, and error handling | Collector architecture doc | Test base collector |
-| 2.1.2 Collector registry | 🔲 Not Started | Not implemented | Registry usage guide | Test registration process |
+| 2.1.2 Collector registry | ✅ Completed | Implemented CollectorRegistry class with registration, discovery, and instantiation capabilities | Collector registry doc | Test registration and discovery |
 | 2.1.3 Rate limiting and retry | 🔲 Not Started | Not implemented | Rate limiting guide | Test backoff strategies |
 | 2.1.4 Source attribution system | 🔲 Not Started | Not implemented | Attribution standards | Test attribution tracking |
 | 2.1.5 Collection logging | 🔲 Not Started | Not implemented | Collection logging guide | Test log completeness |
