@@ -207,8 +207,13 @@ class BaseCollector(abc.ABC):
             combined_metadata.update(metadata)
         
         # Extract additional metadata from data
-        extracted_metadata = self.metadata_manager.extract_metadata(data)
-        combined_metadata.update(extracted_metadata)
+        try:
+            # Try to extract metadata if the method exists
+            if hasattr(self.metadata_manager, 'extract_metadata'):
+                extracted_metadata = self.metadata_manager.extract_metadata(data)
+                combined_metadata.update(extracted_metadata)
+        except Exception as e:
+            logger.warning(f"Could not extract metadata: {str(e)}")
         
         # Save metadata to file
         metadata_path = save_dir / f"{filename}.metadata.json"
