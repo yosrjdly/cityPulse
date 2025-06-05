@@ -51,35 +51,60 @@ Each task has a status indicator:
 | 2.1.4 | Develop source attribution system | 🔲 | `src/data_collection/source_attribution.py` |
 | 2.1.5 | Implement collection logging and monitoring | 🔲 | `src/data_collection/collection_monitor.py` |
 
-### Sprint 2.2: OSM Collection Module (1 Week)
+### Sprint 2.2: OSM Collection Module (2 Weeks)
 
 | Task | Description | Status | Technical Components |
 |------|-------------|--------|----------------------|
 | 2.2.1 | Implement OSM API client | 🔲 | `src/data_collection/osm/osm_client.py` |
-| 2.2.2 | Create POI collector | 🔲 | `src/data_collection/osm/poi_collector.py` |
-| 2.2.3 | Develop transportation network collector | 🔲 | `src/data_collection/osm/transportation_collector.py` |
-| 2.2.4 | Implement boundary and administrative data collector | 🔲 | `src/data_collection/osm/boundary_collector.py` |
-| 2.2.5 | Create building and land use collector | 🔲 | `src/data_collection/osm/landuse_collector.py` |
+| 2.2.2 | Create city boundaries & administrative divisions collector | 🔲 | `src/data_collection/osm/boundary_collector.py` |
+| 2.2.3 | Implement POI collector for amenities (schools, hospitals, etc.) | 🔲 | `src/data_collection/osm/poi_collector.py` |
+| 2.2.4 | Develop transportation network collector (roads, transit routes) | 🔲 | `src/data_collection/osm/transportation_collector.py` |
+| 2.2.5 | Create public facilities collector (parks, libraries, gov. buildings) | 🔲 | `src/data_collection/osm/facilities_collector.py` |
+| 2.2.6 | Implement land use and zoning collector | 🔲 | `src/data_collection/osm/landuse_collector.py` |
+| 2.2.7 | Create building footprints collector | 🔲 | `src/data_collection/osm/building_collector.py` |
+| 2.2.8 | Implement Geofabrik downloader for bulk OSM data | 🔲 | `src/data_collection/osm/geofabrik_downloader.py` |
+| 2.2.9 | Create Overpass Turbo integration for targeted queries | 🔲 | `src/data_collection/osm/overpass_client.py` |
+| 2.2.10 | Implement data validation for OSM collectors | 🔲 | `src/data_collection/osm/validation.py` |
 
-### Sprint 2.3: Additional Data Sources (1 Week)
-
-| Task | Description | Status | Technical Components |
-|------|-------------|--------|----------------------|
-| 2.3.1 | Implement World Bank data collector | 🔲 | `src/data_collection/worldbank/wb_collector.py` |
-| 2.3.2 | Create demographic data collector | 🔲 | `src/data_collection/demographic/demographic_collector.py` |
-| 2.3.3 | Develop GTFS transit data collector | 🔲 | `src/data_collection/transit/gtfs_collector.py` |
-| 2.3.4 | Implement weather and environmental data collector | 🔲 | `src/data_collection/environmental/env_collector.py` |
-| 2.3.5 | Create custom local data source collectors | 🔲 | `src/data_collection/local/local_collector.py` |
-
-### Sprint 2.4: Incremental Collection & Validation (1 Week)
+### Sprint 2.3: Demographic & Statistical Data (1 Week)
 
 | Task | Description | Status | Technical Components |
 |------|-------------|--------|----------------------|
-| 2.4.1 | Implement change detection for data sources | 🔲 | `src/data_collection/change_detector.py` |
-| 2.4.2 | Create incremental update system | 🔲 | `src/data_collection/incremental_updater.py` |
-| 2.4.3 | Develop data validation pipelines | 🔲 | `src/data_collection/validation/validation_pipeline.py` |
-| 2.4.4 | Implement data quality metrics | 🔲 | `src/data_collection/validation/quality_metrics.py` |
-| 2.4.5 | Create fallback mechanisms for failed collections | 🔲 | `src/data_collection/fallback_handler.py` |
+| 2.3.1 | Implement INS (Institut National de la Statistique) client | 🔲 | `src/data_collection/demographic/ins_client.py` |
+| 2.3.2 | Create population statistics collector | 🔲 | `src/data_collection/demographic/population_collector.py` |
+| 2.3.3 | Develop census data parser and normalizer | 🔲 | `src/data_collection/demographic/census_parser.py` |
+| 2.3.4 | Implement demographic data aggregator | 🔲 | `src/data_collection/demographic/demographic_aggregator.py` |
+| 2.3.5 | Create data.gov.tn integration for additional datasets | 🔲 | `src/data_collection/demographic/open_data_client.py` |
+
+### Sprint 2.4: Environmental Data (1 Week)
+
+| Task | Description | Status | Technical Components |
+|------|-------------|--------|----------------------|
+| 2.4.1 | Implement OpenAQ API client | 🔲 | `src/data_collection/environmental/openaq_client.py` |
+| 2.4.2 | Create air quality data collector | 🔲 | `src/data_collection/environmental/air_quality_collector.py` |
+| 2.4.3 | Implement OpenWeatherMap API client | 🔲 | `src/data_collection/environmental/openweather_client.py` |
+| 2.4.4 | Create weather data collector (current, forecast, historical) | 🔲 | `src/data_collection/environmental/weather_collector.py` |
+| 2.4.5 | Develop environmental data integration utilities | 🔲 | `src/data_collection/environmental/env_utils.py` |
+
+### Sprint 2.5: Incremental Collection & Validation (1 Week)
+
+| Task | Description | Status | Technical Components |
+|------|-------------|--------|----------------------|
+| 2.5.1 | Implement change detection for OSM data | 🔲 | `src/data_collection/change_detector.py` |
+| 2.5.2 | Create incremental update system | 🔲 | `src/data_collection/incremental_updater.py` |
+| 2.5.3 | Develop data validation pipelines | 🔲 | `src/data_collection/validation/validation_pipeline.py` |
+| 2.5.4 | Implement data quality metrics | 🔲 | `src/data_collection/validation/quality_metrics.py` |
+| 2.5.5 | Create fallback mechanisms for failed collections | 🔲 | `src/data_collection/fallback_handler.py` |
+
+### Sprint 2.6: Data Integration & Harmonization (1 Week)
+
+| Task | Description | Status | Technical Components |
+|------|-------------|--------|----------------------|
+| 2.6.1 | Implement spatial data harmonization | 🔲 | `src/data_collection/integration/spatial_harmonizer.py` |
+| 2.6.2 | Create temporal data alignment utilities | 🔲 | `src/data_collection/integration/temporal_aligner.py` |
+| 2.6.3 | Develop cross-dataset identifier matching | 🔲 | `src/data_collection/integration/id_matcher.py` |
+| 2.6.4 | Implement metadata standardization | 🔲 | `src/data_collection/integration/metadata_standardizer.py` |
+| 2.6.5 | Create integrated data schema | 🔲 | `src/data_collection/integration/integrated_schema.py` |
 
 ## Phase 3: Data Processing (4 Weeks)
 
