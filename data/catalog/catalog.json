@@ -1,0 +1,301 @@
+{
+  "version": "1.0",
+  "updated_at": "2025-06-04T21:50:21.946042",
+  "entries": [
+    {
+      "dataset_id": "sample_dataset_1_20250604215021",
+      "name": "Sample Dataset 1",
+      "description": "Updated description for Sample Dataset 1",
+      "file_path": "/home/yosr/Desktop/citypulse/data/raw/sample_data1.csv",
+      "format": "csv",
+      "category": "raw",
+      "tags": [
+        "sample",
+        "demo",
+        "small",
+        "updated"
+      ],
+      "schema": {
+        "columns": [
+          {
+            "name": "feature_0",
+            "type": "float64",
+            "stats": {
+              "min": 0.0201851568511639,
+              "max": 0.9815574842007008,
+              "mean": 0.5247109260309019,
+              "null_count": 0
+            }
+          },
+          {
+            "name": "feature_1",
+            "type": "float64",
+            "stats": {
+              "min": 0.0007358888243003,
+              "max": 0.998418300567309,
+              "mean": 0.4847374027908709,
+              "null_count": 0
+            }
+          },
+          {
+            "name": "feature_2",
+            "type": "float64",
+            "stats": {
+              "min": 0.0010889714066282,
+              "max": 0.9963477471960974,
+              "mean": 0.5299910147642121,
+              "null_count": 0
+            }
+          },
+          {
+            "name": "feature_3",
+            "type": "float64",
+            "stats": {
+              "min": 0.0046162249377892,
+              "max": 0.992880430580426,
+              "mean": 0.4654761834630539,
+              "null_count": 0
+            }
+          },
+          {
+            "name": "feature_4",
+            "type": "float64",
+            "stats": {
+              "min": 0.0065752957507435,
+              "max": 0.998880354650912,
+              "mean": 0.5534748224799533,
+              "null_count": 0
+            }
+          }
+        ],
+        "primary_key": null,
+        "foreign_keys": []
+      },
+      "metadata": {
+        "source": "synthetic",
+        "rows": 100,
+        "columns": 5,
+        "description": "Small sample dataset"
+      },
+      "version_id": "f9f53cb7-0f09-4429-bf17-417a4ee234d8",
+      "created_at": "2025-06-04T21:50:21.908005",
+      "updated_at": "2025-06-04T21:50:21.946031"
+    },
+    {
+      "dataset_id": "sample_dataset_2_20250604215021",
+      "name": "Sample Dataset 2",
+      "description": "Second sample dataset for demonstration",
+      "file_path": "/home/yosr/Desktop/citypulse/data/raw/sample_data2.csv",
+      "format": "csv",
+      "category": "raw",
+      "tags": [
+        "sample",
+        "demo",
+        "large"
+      ],
+      "schema": {
+        "columns": [
+          {
+            "name": "feature_0",
+            "type": "float64",
+            "stats": {
+              "min": 0.0007034288163796,
+              "max": 0.9999333315787436,
+              "mean": 0.4928311491153491,
+              "null_count": 0
+            }
+          },
+          {
+            "name": "feature_1",
+            "type": "float64",
+            "stats": {
+              "min": 0.002124015355016,
+              "max": 0.9973185586225723,
+              "mean": 0.4929687870131367,
+              "null_count": 0
+            }
+          },
+          {
+            "name": "feature_2",
+            "type": "float64",
+            "stats": {
+              "min": 0.0011296624133839,
+              "max": 0.9994184595137796,
+              "mean": 0.5058521398052738,
+              "null_count": 0
+            }
+          },
+          {
+            "name": "feature_3",
+            "type": "float64",
+            "stats": {
+              "min": 0.0006094674965088,
+              "max": 0.9997264506562312,
+              "mean": 0.5102317708684396,
+              "null_count": 0
+            }
+          },
+          {
+            "name": "feature_4",
+            "type": "float64",
+            "stats": {
+              "min": 0.0003316346517816,
+              "max": 0.9988847515566474,
+              "mean": 0.5077370447787216,
+              "null_count": 0
+            }
+          },
+          {
+            "name": "feature_5",
+            "type": "float64",
+            "stats": {
+              "min": 0.0012829741581021,
+              "max": 0.9992608204473972,
+              "mean": 0.5029782852530396,
+              "null_count": 0
+            }
+          },
+          {
+            "name": "feature_6",
+            "type": "float64",
+            "stats": {
+              "min": 0.0012109484679477,
+              "max": 0.9961897664454132,
+              "mean": 0.49445804527470394,
+              "null_count": 0
+            }
+          },
+          {
+            "name": "feature_7",
+            "type": "float64",
+            "stats": {
+              "min": 0.000500539404275,
+              "max": 0.998477285469624,
+              "mean": 0.5028745388714578,
+              "null_count": 0
+            }
+          },
+          {
+            "name": "feature_8",
+            "type": "float64",
+            "stats": {
+              "min": 0.001786388200007,
+              "max": 0.9998529109058812,
+              "mean": 0.5144329574006898,
+              "null_count": 0
+            }
+          },
+          {
+            "name": "feature_9",
+            "type": "float64",
+            "stats": {
+              "min": 0.0027272427913249,
+              "max": 0.999734131727745,
+              "mean": 0.5014328583952945,
+              "null_count": 0
+            }
+          }
+        ],
+        "primary_key": null,
+        "foreign_keys": []
+      },
+      "metadata": {
+        "source": "synthetic",
+        "rows": 1000,
+        "columns": 10,
+        "description": "Large sample dataset"
+      },
+      "version_id": "bc913fd9-f72c-4c69-8bdd-60163264e392",
+      "created_at": "2025-06-04T21:50:21.933273",
+      "updated_at": "2025-06-04T21:50:21.933283"
+    },
+    {
+      "dataset_id": "processed_dataset_20250604215021",
+      "name": "Processed Dataset",
+      "description": "Processed version of Sample Dataset 1",
+      "file_path": "/home/yosr/Desktop/citypulse/data/processed/processed_data.csv",
+      "format": "csv",
+      "category": "processed",
+      "tags": [
+        "processed",
+        "normalized"
+      ],
+      "schema": {
+        "columns": [
+          {
+            "name": "feature_0",
+            "type": "float64",
+            "stats": {
+              "min": -1.6462154463130498,
+              "max": 1.4906431080354807,
+              "mean": 1.8318679906315082e-16,
+              "null_count": 0
+            }
+          },
+          {
+            "name": "feature_1",
+            "type": "float64",
+            "stats": {
+              "min": -1.6697661993489052,
+              "max": 1.7721576805182029,
+              "mean": 4.690692279041286e-17,
+              "null_count": 0
+            }
+          },
+          {
+            "name": "feature_2",
+            "type": "float64",
+            "stats": {
+              "min": -1.801060752115856,
+              "max": 1.5880763135947915,
+              "mean": 2.2898349882893852e-17,
+              "null_count": 0
+            }
+          },
+          {
+            "name": "feature_3",
+            "type": "float64",
+            "stats": {
+              "min": -1.7190469712793215,
+              "max": 1.967262846067516,
+              "mean": 3.8857805861880476e-17,
+              "null_count": 0
+            }
+          },
+          {
+            "name": "feature_4",
+            "type": "float64",
+            "stats": {
+              "min": -1.8732226143230537,
+              "max": 1.5255886586648093,
+              "mean": 1.0547118733938987e-16,
+              "null_count": 0
+            }
+          },
+          {
+            "name": "processed",
+            "type": "bool",
+            "stats": {
+              "min": 1.0,
+              "max": 1.0,
+              "mean": 1.0,
+              "null_count": 0
+            }
+          }
+        ],
+        "primary_key": null,
+        "foreign_keys": []
+      },
+      "metadata": {
+        "source_dataset": "sample_dataset_1_20250604215021",
+        "processing_type": "normalization",
+        "columns_added": [
+          "processed"
+        ]
+      },
+      "version_id": "dcb7069e-d51e-4dbe-980c-b00aa663ac24",
+      "created_at": "2025-06-04T21:50:21.940513",
+      "updated_at": "2025-06-04T21:50:21.940525"
+    }
+  ]
+}
