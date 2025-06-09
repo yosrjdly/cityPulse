@@ -6,8 +6,9 @@ This document tracks the current status of the CityPulse project, including comp
 
 | Phase | Status | Progress |
 |-------|--------|----------|
-| 1. Core Infrastructure | ✅ Completed | 100% |
-| 2. Data Collection | 🔶 In Progress | ~15% |
+
+| 1. Core Infrastructure | 🔶 In Progress | ~50% |
+| 2. Data Collection | 🔶 In Progress | ~25% |
 | 3. Data Processing | 🔲 Not Started | 0% |
 | 4. Analysis Framework | 🔲 Not Started | 0% |
 | 5. Visualization & Reporting | 🔲 Not Started | 0% |
@@ -56,38 +57,64 @@ This document tracks the current status of the CityPulse project, including comp
 | 2.1.1 Modular collector architecture | ✅ Completed | Implemented BaseCollector abstract class with standardized interface, metadata tracking, validation, and error handling | Collector architecture doc | Test base collector |
 | 2.1.2 Collector registry | ✅ Completed | Implemented CollectorRegistry class with registration, discovery, and instantiation capabilities | Collector registry doc | Test registration and discovery |
 | 2.1.3 Rate limiting and retry | ✅ Completed | Implemented token bucket rate limiting, exponential backoff retry, and concurrency management | Rate limiting guide | Test backoff strategies |
-| 2.1.4 Source attribution system | 🔲 Not Started | Not implemented | Attribution standards | Test attribution tracking |
-| 2.1.5 Collection logging | 🔲 Not Started | Not implemented | Collection logging guide | Test log completeness |
+| 2.1.4 Source attribution system | ✅ Completed | Implemented comprehensive source attribution system with registry, tracking, and reporting capabilities | Source attribution guide | Test attribution tracking |
+| 2.1.5 Collection logging | ✅ Completed | Implemented comprehensive collection monitoring system with metrics tracking, alerting, and reporting | Collection monitoring guide | Test monitoring accuracy |
+
 
 #### Sprint 2.2: OSM Collection Module
 
 | Task | Status | Notes | Documentation Needed | Testing Needed |
 |------|--------|-------|---------------------|---------------|
 | 2.2.1 OSM API client | 🔶 In Progress | Directory created, not implemented | OSM API reference | Test API connectivity |
-| 2.2.2 POI collector | 🔲 Not Started | Not implemented | POI collection guide | Test POI extraction |
-| 2.2.3 Transportation network collector | 🔲 Not Started | Not implemented | Network collection guide | Test network topology |
-| 2.2.4 Boundary collector | 🔲 Not Started | Not implemented | Boundary collection guide | Test boundary integrity |
-| 2.2.5 Building and land use collector | 🔲 Not Started | Not implemented | Land use collection guide | Test classification accuracy |
+| 2.2.2 City boundaries & administrative divisions collector | 🔲 Not Started | Not implemented | Boundary collection guide | Test boundary integrity |
+| 2.2.3 POI collector | 🔲 Not Started | Not implemented | POI collection guide | Test POI extraction |
+| 2.2.4 Transportation network collector | 🔲 Not Started | Not implemented | Network collection guide | Test network topology |
+| 2.2.5 Public facilities collector | 🔲 Not Started | Not implemented | Facilities collection guide | Test completeness |
+| 2.2.6 Land use and zoning collector | 🔲 Not Started | Not implemented | Land use collection guide | Test classification accuracy |
+| 2.2.7 Building footprints collector | 🔲 Not Started | Not implemented | Building footprint guide | Test geometry accuracy |
+| 2.2.8 Geofabrik downloader | 🔲 Not Started | Not implemented | Geofabrik guide | Test download integrity |
+| 2.2.9 Overpass Turbo integration | 🔲 Not Started | Not implemented | Overpass query guide | Test query performance |
+| 2.2.10 OSM data validation | 🔲 Not Started | Not implemented | OSM validation guide | Test validation rules |
 
-#### Sprint 2.3: Additional Data Sources
-
-| Task | Status | Notes | Documentation Needed | Testing Needed |
-|------|--------|-------|---------------------|---------------|
-| 2.3.1 World Bank data collector | 🔶 In Progress | Directory created, not implemented | World Bank API guide | Test data freshness |
-| 2.3.2 Demographic data collector | 🔲 Not Started | Not implemented | Demographic data guide | Test population counts |
-| 2.3.3 GTFS transit data collector | 🔲 Not Started | Not implemented | GTFS format guide | Test schedule validity |
-| 2.3.4 Environmental data collector | 🔲 Not Started | Not implemented | Environmental data guide | Test sensor data validity |
-| 2.3.5 Custom local data collectors | 🔲 Not Started | Not implemented | Local data integration guide | Test data normalization |
-
-#### Sprint 2.4: Incremental Collection & Validation
+#### Sprint 2.3: Demographic & Statistical Data
 
 | Task | Status | Notes | Documentation Needed | Testing Needed |
 |------|--------|-------|---------------------|---------------|
-| 2.4.1 Change detection | 🔲 Not Started | Not implemented | Change detection guide | Test diff accuracy |
-| 2.4.2 Incremental update system | 🔲 Not Started | Not implemented | Incremental updates guide | Test update efficiency |
-| 2.4.3 Data validation pipelines | 🔲 Not Started | Not implemented | Validation pipeline doc | Test validation rules |
-| 2.4.4 Data quality metrics | 🔲 Not Started | Not implemented | Quality metrics guide | Test metric calculations |
-| 2.4.5 Fallback mechanisms | 🔲 Not Started | Not implemented | Fallback strategies doc | Test recovery scenarios |
+| 2.3.1 INS client | 🔲 Not Started | Not implemented | INS API guide | Test data freshness |
+| 2.3.2 Population statistics collector | 🔲 Not Started | Not implemented | Population data guide | Test population counts |
+| 2.3.3 Census data parser | 🔲 Not Started | Not implemented | Census format guide | Test parsing accuracy |
+| 2.3.4 Demographic data aggregator | 🔲 Not Started | Not implemented | Aggregation methodology | Test aggregation accuracy |
+| 2.3.5 Open data portal integration | 🔲 Not Started | Not implemented | Open data guide | Test API connectivity |
+
+#### Sprint 2.4: Environmental Data
+
+| Task | Status | Notes | Documentation Needed | Testing Needed |
+|------|--------|-------|---------------------|---------------|
+| 2.4.1 OpenAQ API client | 🔲 Not Started | Not implemented | OpenAQ API reference | Test API connectivity |
+| 2.4.2 Air quality data collector | 🔲 Not Started | Not implemented | Air quality metrics guide | Test data validation |
+| 2.4.3 OpenWeatherMap API client | 🔲 Not Started | Not implemented | OpenWeatherMap API guide | Test API connectivity |
+| 2.4.4 Weather data collector | 🔲 Not Started | Not implemented | Weather data guide | Test data completeness |
+| 2.4.5 Environmental data utilities | 🔲 Not Started | Not implemented | Environmental data guide | Test utility functions |
+
+#### Sprint 2.5: Incremental Collection & Validation
+
+| Task | Status | Notes | Documentation Needed | Testing Needed |
+|------|--------|-------|---------------------|---------------|
+| 2.5.1 Change detection | 🔲 Not Started | Not implemented | Change detection guide | Test diff accuracy |
+| 2.5.2 Incremental update system | 🔲 Not Started | Not implemented | Incremental updates guide | Test update efficiency |
+| 2.5.3 Data validation pipelines | 🔲 Not Started | Not implemented | Validation pipeline doc | Test validation rules |
+| 2.5.4 Data quality metrics | 🔲 Not Started | Not implemented | Quality metrics guide | Test metric calculations |
+| 2.5.5 Fallback mechanisms | 🔲 Not Started | Not implemented | Fallback strategies doc | Test recovery scenarios |
+
+#### Sprint 2.6: Data Integration & Harmonization
+
+| Task | Status | Notes | Documentation Needed | Testing Needed |
+|------|--------|-------|---------------------|---------------|
+| 2.6.1 Spatial data harmonization | 🔲 Not Started | Not implemented | Spatial harmonization guide | Test coordinate alignment |
+| 2.6.2 Temporal data alignment | 🔲 Not Started | Not implemented | Temporal alignment guide | Test time series alignment |
+| 2.6.3 Cross-dataset identifier matching | 🔲 Not Started | Not implemented | ID matching methodology | Test match accuracy |
+| 2.6.4 Metadata standardization | 🔲 Not Started | Not implemented | Metadata standards doc | Test schema compliance |
+| 2.6.5 Integrated data schema | 🔲 Not Started | Not implemented | Schema documentation | Test schema validation |
 
 ### Phase 3: Data Processing
 
@@ -285,22 +312,18 @@ For effective testing, implement the following for each phase:
 
 ## Next Steps
 
-1. Continue Sprint 2.1 (Collection Framework)
-   - Implement collector registry (Task 2.1.2)
-   - Create rate limiting and retry mechanisms (Task 2.1.3)
-   - Develop source attribution system (Task 2.1.4)
-   - Implement collection logging and monitoring (Task 2.1.5)
-2. Expand developer documentation
-3. Begin implementing OSM Collection Module (Sprint 2.2)
+1. Begin implementing OSM Collection Module (Sprint 2.2)
+   - Implement OSM API client (Task 2.2.1)
+   - Create POI collector (Task 2.2.2)
+2. Continue work on additional data sources (Sprint 2.3)
+3. Expand developer documentation
 
 ## Current Focus
 
 The current focus is on continuing the data collection framework:
 
-
-1. Implementing collector registry (Task 2.1.2)
-2. Creating rate limiting and retry mechanisms (Task 2.1.3)
-3. Continuing developer documentation (Tasks 6.1.1 and 6.1.3)
+1. Beginning work on the OSM Collection Module (Sprint 2.2)
+2. Continuing developer documentation (Tasks 6.1.1 and 6.1.3)
 
 
 
@@ -312,6 +335,7 @@ The current focus is on continuing the data collection framework:
 - Phase 4: Not started
 - Phase 5: Not started
 - Phase 6: ~30% complete
+
 
 ## Recent Achievements
 
@@ -330,6 +354,10 @@ The current focus is on continuing the data collection framework:
 13. Implemented data validation framework with rule-based validation, multi-level severity, and detailed reporting
 14. Created automated testing infrastructure with pytest configuration, fixtures, and comprehensive documentation
 15. Designed modular collector architecture with standardized interface, metadata tracking, validation, and error handling
+16. Implemented collector registry with registration, discovery, and instantiation capabilities
+17. Created rate limiting and retry mechanisms with token bucket algorithm, exponential backoff, and concurrency management
+18. Implemented source attribution system with registry, tracking, and reporting capabilities
+19. Created collection monitoring system with metrics tracking, alerting, and reporting capabilities
 
 
 ## Challenges and Blockers
